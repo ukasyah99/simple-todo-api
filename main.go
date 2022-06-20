@@ -23,11 +23,5 @@ func main() {
 	r.PUT("/todo/:id", handler.UpdateTodo)
 	r.DELETE("/todo/:id", handler.DeleteTodo)
 
-	// r.GET("/ping", func(c *gin.Context) {
-	// 	c.JSON(http.StatusOK, gin.H{
-	// 		"message": "pong",
-	// 	})
-	// })
-
 	r.Run()
 }
